@@ -7,9 +7,13 @@ export default function ReferenceValues(props) {
   return (
     <Card>
       <Styled.title>Reference values</Styled.title>
-      {props.meterTable.map(meter => (
-        <Styled.meterWrapper>
-          <MeterRecord meter={meter} />
+      {props.meterTable.map((meter, index) => (
+        <Styled.meterWrapper key={index}>
+          <MeterRecord
+            color={meter.color}
+            label={meter.label}
+            value={meter.value}
+          />
         </Styled.meterWrapper>
       ))}
     </Card>

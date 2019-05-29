@@ -9,10 +9,13 @@ import IntroductionBlock from "./components/IntroductionBlock";
 import ResultBlock from "./components/ResultBlock";
 
 function App() {
-  const [selectedValue, setSelectedValue] = useState(meterTableRes[4]);
+  const [resultValue, setResultValue] = useState(0);
 
-  const calculateBMI = () => {
-    console.log("Calculating...");
+  const calculateBMI = parameters => {
+    const result = (
+      parameters.weight / Math.pow(parameters.height / 100, 2)
+    ).toFixed(2);
+    setResultValue(result);
   };
 
   return (
@@ -20,7 +23,7 @@ function App() {
       <Styled.globalStyles />
       <Styled.app>
         <Header title="BMI 1.0" />
-        <ResultBlock meter={selectedValue} />
+        <ResultBlock meterTable={meterTableRes} result={resultValue} />
         <CalculationForm onParametersChange={calculateBMI} />
         <ReferenceValues meterTable={meterTableRes} />
         <IntroductionBlock />

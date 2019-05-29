@@ -4,7 +4,7 @@
     "label": "Very severely underweight",
     "value": "< 16",
     "min": 0,
-    "max": "16"
+    "max": 16
   },
   {
     "color": "#ff9800",
@@ -51,8 +51,8 @@
   {
     "color": "#f44235",
     "label": "Obese Class III",
-    "value": ">= 40",
+    "value": "&ge; 40",
     "min": 40,
-    "max": 9999
+    "max": 99999
   }
 ]
