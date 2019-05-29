@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import meterTableRes from "./data/meterTable.json";
-import { createGlobalStyle } from "styled-components";
 import Styled from "./App.styles";
 
 import Header from "./components/Header";
@@ -10,29 +9,19 @@ import IntroductionBlock from "./components/IntroductionBlock";
 import ResultBlock from "./components/ResultBlock";
 
 function App() {
-  const GlobalStyle = createGlobalStyle`
-  body,html {
-    margin:0;
-    padding:0;
-    font-family: Arial, sans-serif;
-  }
-`;
+  const [selectedValue, setSelectedValue] = useState(meterTableRes[4]);
+
+  const calculateBMI = () => {
+    console.log("Calculating...");
+  };
 
   return (
     <React.Fragment>
-      <GlobalStyle />
+      <Styled.globalStyles />
       <Styled.app>
         <Header />
-        <ResultBlock
-          meter={{
-            color: "color orange",
-            label: "Severly underweight",
-            value: "16-16,99",
-            min: 16,
-            max: 16.99
-          }}
-        />
-        <CalculationForm />
+        <ResultBlock meter={selectedValue} />
+        <CalculationForm onParametersChange={calculateBMI} />
         <ReferenceValues meterTable={meterTableRes} />
         <IntroductionBlock />
       </Styled.app>
