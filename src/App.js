@@ -19,7 +19,7 @@ function App() {
     <React.Fragment>
       <Styled.globalStyles />
       <Styled.app>
-        <Header />
+        <Header title="BMI 1.0" />
         <ResultBlock meter={selectedValue} />
         <CalculationForm onParametersChange={calculateBMI} />
         <ReferenceValues meterTable={meterTableRes} />

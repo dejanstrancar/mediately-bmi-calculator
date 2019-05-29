@@ -1,9 +1,10 @@
 import React from "react";
+import Styled from "./Header.styles";
 
-export default function Header() {
+export default function Header(props) {
   return (
-    <div>
-      <h1>BMI 1.0</h1>
-    </div>
+    <Styled.header>
+      <Styled.title>{props.title}</Styled.title>
+    </Styled.header>
   );
 }
