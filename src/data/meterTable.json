@@ -1,55 +1,55 @@
 [
   {
-    "color": "color red",
+    "color": "#f44235",
     "label": "Very severely underweight",
     "value": "< 16",
     "min": 0,
     "max": "16"
   },
   {
-    "color": "color orange",
+    "color": "#ff9800",
     "label": "Severly underweight",
     "value": "16-16,99",
     "min": 16,
     "max": 16.99
   },
   {
-    "color": "color yellow",
+    "color": "#ffeb3b",
     "label": "Underweight",
     "value": "17-18,49",
     "min": 17,
     "max": 18.49
   },
   {
-    "color": "color green",
+    "color": "#06a05b",
     "label": "Normal (healtyh weight)",
     "value": "18,5-24,99",
     "min": 18.5,
     "max": 24.99
   },
   {
-    "color": "color yellow",
+    "color": "#06a05b",
     "label": "Overweight",
     "value": "25-29,99",
     "min": 25,
     "max": 29.99
   },
   {
-    "color": "color orange",
+    "color": "#ff9800",
     "label": "Obese Class I",
     "value": "30-34,99",
     "min": 30,
     "max": 34.99
   },
   {
-    "color": "color red",
+    "color": "#f44235",
     "label": "Obese Class II ",
     "value": "35-39,99",
     "min": 35,
     "max": 39.99
   },
   {
-    "color": "color dark red",
+    "color": "#f44235",
     "label": "Obese Class III",
     "value": ">= 40",
     "min": 40,
