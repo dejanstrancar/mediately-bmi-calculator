@@ -6,9 +6,9 @@ export default {
     padding: 0;
     font-size: 16px;
     font-weight: normal;
+    margin: 0 0 10px 0;
   `,
   text: styled.p`
-    margin: 10px 0 0 0;
     padding: 0;
     font-size: 13px;
   `
